@@ -19,8 +19,6 @@ while True:
     screen.text_pixels("pressed it: ", x=3, y=10, clear_screen=False, font=fonts.load('courB12'))
     screen.text_pixels(str(count), x=3, y=70, clear_screen=False, font=fonts.load('lubB24'))
     screen.update()
-    print("Count: " + str(count))
-    print("waiting release: " + str(waiting_release))
     if ts.is_pressed and (not waiting_release):
         count += 1
         waiting_release = not waiting_release
